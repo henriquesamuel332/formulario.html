@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <p>
+    <form action="index.html" method="post">
+
+        <label>Seu nome</label>
+        <input type="text" placeholder="seu nome">
+    <p>
+      <label>Número de telefone:</label>
+      <input type="text" placeholder="seu número de telefone">
+    </p>
+
+      <p>
+      <label>Email:</label>
+        <input type="text" placeholder="seu email" >
+        </p>
+        
+        <div class="radio-group">
+            <label>1. Como você avalia nosso atendimento?</label>
+          <label><input type="radio" name="atendimento" value="otimo" required> Ótimo</label>
+          <label><input type="radio" name="atendimento" value="bom"> Bom</label>
+          <label><input type="radio" name="atendimento" value="ruim"> Ruim</label>
+        </div>
+
+        <label>2. Você recomendaria nossos serviços?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="recomendacao" value="sim" required> Sim</label>
+          <label><input type="radio" name="recomendacao" value="nao"> Não</label>
+        </div>
+
+        <label for="frequencia">3. Com que frequência você utiliza nossos serviços?</label>
+        <select id="frequencia" name="frequencia" required>
+          <option value="">Selecione...</option>
+          <option value="sempre">Sempre</option>
+          <option value="as_vezes">Às vezes</option>
+          <option value="raro">Raramente</option>
+        </select>
+
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="compartilhar" value="sim"> Autorizo compartilhar minhas respostas com terceiros.</label>
+        </div>
+      </fieldset>
+            
+         </p>
+         <p>
+        <input type="submit" value="log in">
+        </p>
+    </form>
+</body>
+</html>
